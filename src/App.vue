@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BarraNavegacion/>
+    <Cabecera/>
+    <div class="container-fluid">
+    <div class="row">
+        <Formulario/>
+        <Carrusel/>
+    </div>
+      <PiePagina/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BarraNavegacion from "./components/BarraNavegacion.vue";
+import Cabecera from "@/components/Cabecera";
+import Formulario from "@/components/Formulario";
+import Carrusel from "@/components/Carrusel";
+import PiePagina from "@/components/PiePagina";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BarraNavegacion,
+    Cabecera,
+    Formulario,
+    Carrusel,
+    PiePagina
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
